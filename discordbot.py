@@ -29,7 +29,7 @@ last_blog_url = load_last_blog_url()
 async def check_website():
     global last_blog_url
     await client.wait_until_ready()
-    channel = client.get_channel(CHANNEL_ID)
+    channel = client.get_channel(config.CHANNEL_ID)
 
     while not client.is_closed():
         response = requests.get(HIYORI_BLOG_URL)
