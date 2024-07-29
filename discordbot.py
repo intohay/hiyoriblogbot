@@ -70,9 +70,9 @@ async def check_website():
                             images.append(discord.File(image_data, os.path.basename(image_url)))
 
                     if images:
-                        await channel.send(f"ひよりブログが更新されました！{BASE_URL}{blog_url}", files=images)
+                        await channel.send(f"ひよりブログが更新されました！\n{BASE_URL}{blog_url}", files=images)
                     else:
-                        await channel.send(f"ひよりブログが更新されました！{BASE_URL}{blog_url}")
+                        await channel.send(f"ひよりブログが更新されました！\n{BASE_URL}{blog_url}")
 
                     last_blog_url = blog_url
                     save_last_blog_url(last_blog_url)
