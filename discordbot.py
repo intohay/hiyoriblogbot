@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 from io import BytesIO
 
-CHECK_INTERVAL = 60
+CHECK_INTERVAL = 600 
 
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)
